@@ -86,7 +86,7 @@ const SwipeoutBtn = React.createClass({
           (btn.component ?
             <View style={styleSwipeoutBtnComponent}>{btn.component}</View>
             :
-            btn.text
+            <Text numberOfLines={1}>{ btn.text }</Text>
           )
         }
       </NativeButton>
